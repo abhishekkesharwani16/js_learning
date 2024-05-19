@@ -38,4 +38,33 @@ function loginUserMessage(username = "same") {        // if give only username t
 }
 
 // console.log(loginUserMessage("Hitesh"));
-console.log(loginUserMessage());
+// console.log(loginUserMessage());
+
+function calculatedCarPrice(val1, val2, ...num1){     // "..." called rest operator
+    return num1
+}
+
+console.log(calculatedCarPrice(200, 400, 500, 2000));
+
+const user = {
+    username: "Abhishek",
+    price: 199
+}
+function handleObject(anyobject){
+    console.log(`username is ${anyobject.username} and price is ${anyobject.price}`);
+}
+
+// handleObject(user)
+handleObject({
+    username: "sam",
+    price: 379
+})
+
+const myNewArray =[200, 400, 600, 800]
+
+function returnSecondValue(getArray){
+    return getArray[1]
+}
+
+// console.log(returnSecondValue(myNewArray));
+console.log(returnSecondValue([200, 800, 600, 700]));
